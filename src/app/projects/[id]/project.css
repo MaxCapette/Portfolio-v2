@@ -1,0 +1,52 @@
+.projectMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+   
+    width: 95%;
+}
+
+.projectImages {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+.projectLinks {
+    font-size: 2rem;
+    color: var(--bg-0);
+}
+.projectLinks:hover {
+    color: var(--revert);
+}
+
+.backButton {
+    background-color: var(--revert);
+    color: var(--bg-0);
+    transition: all 0.25s ease;
+}
+.backButton:hover {
+    transform: scale(1.05);
+    background-color: var(--bg-0);
+    color: var(--revert);
+}
+.projectDescription {
+   font-size: 2rem;
+    font-weight: 700;
+    margin: 5px;
+    max-width: 70%;
+    @media screen and (max-width: 860px) {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}

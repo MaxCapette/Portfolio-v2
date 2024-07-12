@@ -1,33 +1,79 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  @layer base {
+    :root {
+      --background: 60 100% 95%; /* Jaune pastel clair */
+      --foreground: 240 100% 10%; /* Bleu foncé */
+      --primary: 340 100% 80%; /* Rose vif */
+      --primary-foreground: 0 0% 100%; /* Blanc */
+      --secondary: 200 100% 70%; /* Bleu vif */
+      --secondary-foreground: 0 0% 100%; /* Blanc */
+      --accent: 120 100% 70%; /* Vert vif */
+      --accent-foreground: 0 0% 100%; /* Blanc */
+      --destructive: 0 100% 70%; /* Rouge vif */
+      --destructive-foreground: 0 0% 100%; /* Blanc */
+      --muted: 60 100% 90%; /* Jaune clair */
+      --muted-foreground: 240 100% 20%; /* Bleu moyen */
+      --card: 30 100% 90%; /* Orange pastel clair */
+      --card-foreground: 240 100% 10%; /* Bleu foncé */
+      --popover: 0 0% 100%; /* Blanc */
+      --popover-foreground: 240 100% 10%; /* Bleu foncé */
+      --border: 240 100% 80%; /* Bleu clair */
+      --input: 240 100% 70%; /* Bleu moyen */
+      --ring: 240 100% 60%; /* Bleu foncé */
+      --radius: 1rem; /* Rayon des bordures */
+    }
   }
-}
+  
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
   }
-}
+
+
+  @supports (background: conic-gradient(from 0turn, #213, #112 50%, #213)) {
+    .boxButton {
+      --border-size: 3px;
+      --border-angle: 0turn;
+  
+      background-image: conic-gradient(
+          from var(--border-angle),
+          #213,
+          #112 50%,
+          #213
+        ),
+        conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+      background-size: calc(100% - (var(--border-size) * 2))
+          calc(100% - (var(--border-size) * 2)),
+        cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+  
+      animation: bg-spin 3s linear infinite;
+    }
+ 
+  
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+      
+    }
+   
+  
+    @property --border-angle {
+      syntax: "<angle>";
+      inherits: true;
+      initial-value: 0turn;
+    }
+  }
+  
