@@ -19,21 +19,28 @@ export default function Header() {
         className="hover:underline underline-offset-4"
         prefetch={false}
       >
-        Accueil
+        Home
       </Link>
       <Link
         href="#about"
         className="hover:underline underline-offset-4"
         prefetch={false}
       >
-        À propos
+        About
       </Link>
       <Link
-        href="#services"
+        href="#projects"
         className="hover:underline underline-offset-4"
         prefetch={false}
       >
-        Services
+        Projects
+      </Link>
+      <Link
+        href="#experience"
+        className="hover:underline underline-offset-4"
+        prefetch={false}
+      >
+        Experience
       </Link>
       <Link
         href="#contact"
@@ -46,12 +53,12 @@ export default function Header() {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="default" className="md:hidden">
-          <MenuIcon className="h-6 w-6" />
+          <MenuIcon className="h-6 w-6  " />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent
-        className="w-full max-w-xs  p-6 backgroundCustom"
+        className="w-full max-w-xs  p-6 bg-input"
         side="right"
       >
         <div className="flex flex-col gap-6">
@@ -60,15 +67,23 @@ export default function Header() {
               className="font-medium hover:text-gray-900 dark:hover:text-gray-50"
               href="#about"
             >
-              À propos
+              About
             </Link>
           </SheetClose>
           <SheetClose asChild>
             <Link
               className="font-medium hover:text-gray-900 dark:hover:text-gray-50"
-              href="#services"
+              href="#projects"
             >
-              Services
+              Projects
+            </Link>
+          </SheetClose>
+          <SheetClose asChild>
+            <Link
+              className="font-medium hover:text-gray-900 dark:hover:text-gray-50"
+              href="#experience"
+            >
+              Experience
             </Link>
           </SheetClose>
           <SheetClose asChild>
