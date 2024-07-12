@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { projects } from "@/Data/projectsDatas";
 import "./project.css";
 import Image from "next/image";

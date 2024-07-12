@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,10 +22,10 @@ export function V0template() {
               <h1 className="text-4xl font-bold">Maxime Capette</h1>
               <h2 className="text-2xl font-medium">Front-End Developer</h2>
               <p className="text-muted-foreground">
-                I'm a passionate front-end developer with a strong focus on
+                I&apos;m a passionate front-end developer with a strong focus on
                 building beautiful and responsive user interfaces. I have
                 experience working with modern web technologies and frameworks,
-                and I'm always eager to learn and grow.
+                and I&apos;m always eager to learn and grow.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -66,7 +67,7 @@ export function V0template() {
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold flex ">Work Experience</h2>
             <p className="text-muted-foreground">
-              Here's a timeline of my previous roles and experiences.
+              Here&apos;s a timeline of my previous roles and experiences.
             </p>
           </div>
           <About />
