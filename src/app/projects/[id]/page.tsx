@@ -21,7 +21,7 @@ export default function Projects({ params }: { params: { id: string } }) {
             <Button className="mx-4">Back</Button>
           </Link>
         </div>
-        <Link target="_blank" rel="noopener noreferrer" href={project.link}>
+        {project.link && ( <Link target="_blank" rel="noopener noreferrer" href={project.link}>
           <div className="projectImages">
             <img
               src={project.images[1]}
@@ -38,7 +38,7 @@ export default function Projects({ params }: { params: { id: string } }) {
               />
             )}
           </div>
-        </Link>
+        </Link> )}
         <p className="projectDescription">{project.description}</p>
         <p className="projectDescription">{project.comment}</p>
         <p className="projectDescription">{project.login}</p>
