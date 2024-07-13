@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 import About from "../about/About";
 import Projects from "../Projects";
+import ContactPage from "../contact/contact";
 export function V0template() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -73,16 +74,7 @@ export function V0template() {
             <p className="text-muted-foreground">
               Feel free to reach out to me for any inquiries or opportunities.
             </p>
-            <form className="grid gap-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <Input type="text" placeholder="Name" className="w-full" />
-                <Input type="email" placeholder="Email" className="w-full" />
-              </div>
-              <Textarea placeholder="Message" className="w-full" />
-              <Button type="submit" className="justify-self-end">
-                Send Message
-              </Button>
-            </form>
+           <ContactPage />
           </div>
         </section>
       </main>
