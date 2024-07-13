@@ -29,9 +29,9 @@ const currentProjects = reversedProjects.slice(indexOfFirstProject, indexOfLastP
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentProjects.map(project => (
-            <Card key={project.id}>
+            <Card key={project.id} className="transform transition-transform hover:scale-110">
                 <Link className="project" href={`projects/${project.id}`}>
-              <img src={project.images[0]} width={400} height={300} alt="Project 1" className="rounded-t-lg" />
+              <img src={project.images[0]} width={400} height={300} alt="Project 1" className=" inset-0 h-60 object-fill rounded-t-lg" />
               <CardContent className="p-4">
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>

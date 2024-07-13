@@ -1,22 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { projects } from "@/Data/projectsDatas";
+
 import About from "../about/About";
 import Projects from "../Projects";
 export function V0template() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <section id="about" className="py-16 px-6 md:px-10 lg:px-16">
+        <section id="about" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-secondary to-primary">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold">Maxime Capette</h1>
@@ -63,7 +58,7 @@ export function V0template() {
         >
           <Projects />
         </section>
-        <section id="experience" className="py-16 px-6 md:px-10 lg:px-16">
+        <section id="experience" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-secondary to-primary">
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold flex ">Work Experience</h2>
             <p className="text-muted-foreground">

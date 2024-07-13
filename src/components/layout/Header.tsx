@@ -15,7 +15,7 @@ export default function Header() {
     </Link>
     <nav className="hidden md:flex gap-6">
       <Link
-        href="#"
+        href="/"
         className="hover:underline underline-offset-4"
         prefetch={false}
       >
