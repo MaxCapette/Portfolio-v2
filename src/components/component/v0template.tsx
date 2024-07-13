@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 
 import About from "../about/About";
 import Projects from "../Projects";
