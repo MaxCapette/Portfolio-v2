@@ -66,7 +66,7 @@ export function V0template() {
           <About />
         </section>
         <section id="contact" className="py-16 px-6 md:px-10 lg:px-16 bg-muted">
-          <div className="max-w-4xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4 flex flex-col items-center">
             <h2 className="text-3xl font-bold">Get in Touch</h2>
             <p className="text-muted-foreground">
               Feel free to reach out to me for any inquiries or opportunities.
