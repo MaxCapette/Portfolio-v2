@@ -6,11 +6,12 @@ import About from "../about/About";
 import Projects from "../Projects";
 import ContactPage from "../contact/contact";
 import { Skills } from "./skills";
+import Checkerboard from "../ui/CheckerBoard";
 export function V0template() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <section id="about" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-secondary to-primary">
+        <section id="about" className="py-16 px-6 md:px-10 lg:px-16 bg-accent ">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
             
@@ -53,13 +54,15 @@ export function V0template() {
             </div>
           </div>
         </section>
+        <Checkerboard />
         <section
           id="projects"
           className="py-16 px-6 md:px-10 lg:px-16 bg-input"
         >
           <Projects />
         </section>
-        <section id="experience" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-secondary to-primary">
+        <Checkerboard />
+        <section id="experience" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-input to-secondary">
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold flex ">Work Experience</h2>
             <p className="text-muted-foreground text-xl">
@@ -68,7 +71,9 @@ export function V0template() {
           </div>
           <About />
         </section>
+        <Checkerboard />
         <Skills />
+        <Checkerboard />
         <section id="contact" className="py-16 px-6 md:px-10 lg:px-16 bg-muted">
           <div className="max-w-4xl mx-auto space-y-4 flex flex-col items-center">
             <h2 className="text-3xl font-bold">Get in Touch</h2>
@@ -78,6 +83,7 @@ export function V0template() {
            <ContactPage />
           </div>
         </section>
+        <Checkerboard />
       </main>
     </div>
   );
