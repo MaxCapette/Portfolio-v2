@@ -20,9 +20,9 @@ export default function About() {
             
            : 
            ( <div className="xpDetails">
-            <p>{xp.date}</p>
-              <h3>{xp.title}</h3>
-              <p>{xp.description}</p>
+            <p className="font-bold" >{xp.date}</p>
+              <h3 className="font-bold italic text-lg">{xp.title}</h3>
+              <p className="font-bold">{xp.description}</p>
               </div>)
         }
             

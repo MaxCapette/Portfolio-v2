@@ -29,14 +29,14 @@ export function V0template() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="/pdf/CV_2024-07-13_Maxime_Capette.pdf"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-input"
                   prefetch={false}
                 >
                   View Resume
                 </Link>
                 <Link
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-input hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
                   Contact Me
@@ -49,7 +49,7 @@ export function V0template() {
                 width={400}
                 height={400}
                 alt="a cool picture of me (kind of)"
-                className="rounded-full"
+                className="shadow-lg filter hover:grayscale "
               />
             </div>
           </div>

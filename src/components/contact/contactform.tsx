@@ -20,7 +20,7 @@ const FormContact: React.FC = () => {
       <textarea id="message" name="message" className='inputColor'/>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-      <Button type="submit" disabled={state.submitting}>
+      <Button type="submit" disabled={state.submitting} className='rounded-md hover:bg-input'>
         Envoyer
       </Button>
 
