@@ -17,8 +17,8 @@ export function V0template() {
             
               <div className="typewriter w-min">
               <h1 className="text-4xl font-bold">Hello 👋 I&apos;m Max,</h1></div>
-              <h2 className="text-2xl font-medium">a Web Developer</h2>
-              <p className="text-muted-foreground introText">
+              <h2 className="text-2xl font-medium ">a Web Developer</h2>
+              <p className=" introText text-xl text-justify">
                 I&apos;m a passionate front-end developer with a strong focus on
                 building beautiful and responsive user interfaces. I have
                 experience working with modern web technologies and frameworks,
