@@ -43,7 +43,7 @@ export function V0template() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/about.jpeg"
+                src="/about2.jpeg"
                 width={400}
                 height={400}
                 alt="a cool picture of me (kind of)"
