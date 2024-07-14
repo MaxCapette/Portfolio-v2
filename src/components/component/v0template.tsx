@@ -5,6 +5,7 @@ import Link from "next/link";
 import About from "../about/About";
 import Projects from "../Projects";
 import ContactPage from "../contact/contact";
+import { Skills } from "./skills";
 export function V0template() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -67,6 +68,7 @@ export function V0template() {
           </div>
           <About />
         </section>
+        <Skills />
         <section id="contact" className="py-16 px-6 md:px-10 lg:px-16 bg-muted">
           <div className="max-w-4xl mx-auto space-y-4 flex flex-col items-center">
             <h2 className="text-3xl font-bold">Get in Touch</h2>

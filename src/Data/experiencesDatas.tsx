@@ -45,7 +45,7 @@ export const experiences: Experience[] = [
         id: 6,
         date: '2023',
         title: 'Internship',
-        description: 'Intern as fullstack web dev at Titovideo',
+        description: 'Intern as a full-stack web developer at Titovideo',
         image: '/about/15.png',
         bool: false,
     },
@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
         id: 7,
         date: '2024',
         title: 'Freelance',
-        description: 'I am currently doing freelance work',
+        description: 'I am currently working as a freelancer.',
         image: '/about/freelance.jpeg',
         bool: false,
     }

@@ -140,7 +140,7 @@ input::-moz-focus-inner {
   font-family: "neontubes";
 }
 
-.sneaker h1 {
+.sneaker p {
   margin: 0;
   -webkit-transform: translateZ(0) translate3D(0, 0, 0);
   transform: translateZ(0) translate3D(0, 0, 0);
