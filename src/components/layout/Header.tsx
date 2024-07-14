@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import Sneaker from "../sneaker/page";
 export default function Header() {
     return (
-  <header className="bg-primary/80 text-primary-foreground py-4 px-6 sticky top-0 z-50  backdrop-blur flex items-center justify-between">
+  <header className="bg-input/80 text-primary-foreground py-4 px-6 sticky top-0 z-50  backdrop-blur flex items-center justify-between">
     <Link href="#" className="flex items-center gap-2" prefetch={false}>
       <Sneaker />
     </Link>

@@ -13,17 +13,17 @@ export default function Projects({ params }: { params: { id: string } }) {
 
   return (
     <main className="flex min-h-screen flex-col items-center py-32">
-      <div className="max-w-4xl w-full px-4">
+      <div className="max-w-4xl w-full px-2">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold">{project.title}</h2>
           <Link href="/">
             <Button className="mx-4">Back</Button>
           </Link>
         </div>
-        <div className="mb-8">
+        <div className="mb-8 w-full ">
           {project.link ? (
             <Link target="_blank" rel="noopener noreferrer" href={project.link}>
-              <div className="flex space-x-4">
+              <div className="flex space-x-2 justify-center">
                 <img
                   src={project.images[1]}
                   alt={project.title}
@@ -39,7 +39,7 @@ export default function Projects({ params }: { params: { id: string } }) {
               </div>
             </Link>
           ) : (
-            <div className="flex space-x-4">
+            <div className="flex space-x-2 justify-center">
               <img
                 src={project.images[1]}
                 alt={project.title}

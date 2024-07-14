@@ -12,9 +12,11 @@ export function V0template() {
         <section id="about" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-secondary to-primary">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold">Maxime Capette</h1>
-              <h2 className="text-2xl font-medium">Front-End Developer</h2>
-              <p className="text-muted-foreground">
+            
+              <div className="typewriter w-min">
+              <h1 className="text-4xl font-bold">Hello 👋 I&apos;m Max,</h1></div>
+              <h2 className="text-2xl font-medium">a Web Developer</h2>
+              <p className="text-muted-foreground introText">
                 I&apos;m a passionate front-end developer with a strong focus on
                 building beautiful and responsive user interfaces. I have
                 experience working with modern web technologies and frameworks,
@@ -44,7 +46,7 @@ export function V0template() {
                 src="/about.jpeg"
                 width={400}
                 height={400}
-                alt="John Doe"
+                alt="a cool picture of me (kind of)"
                 className="rounded-full"
               />
             </div>

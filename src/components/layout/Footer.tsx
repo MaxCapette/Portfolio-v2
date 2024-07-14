@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="flex justify-evenly items-center gap-7 sm:flex-col p-10 bg-neutral text-neutral-content">
+    <footer className="flex justify-evenly items-center gap-7 sm:flex-col p-10 bg-input text-neutral-content">
       <aside className="flex items-center gap-4">
         <svg
           width="40"
