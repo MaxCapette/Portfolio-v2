@@ -25,7 +25,7 @@ const currentProjects = reversedProjects.slice(indexOfFirstProject, indexOfLastP
         <div className="max-w-6xl mx-auto">
         <div className="space-y-4 mb-8 flex flex-col items-center">
           <h2 className="text-3xl font-bold">My Projects</h2>
-          <p className="text-muted-foreground">Here are some of the projects I&apos;ve worked on.</p>
+          <p className="text-muted-foreground text-2xl">Here are some of the projects I&apos;ve worked on.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentProjects.map(project => (

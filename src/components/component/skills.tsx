@@ -66,7 +66,7 @@ export function Skills() {
   )
 }
 
-function BellIcon(props) {
+function BellIcon(props: any) {
   return (
     <svg
       {...props}
@@ -87,7 +87,7 @@ function BellIcon(props) {
 }
 
 
-function BookIcon(props) {
+function BookIcon(props: any) {
   return (
     <svg
       {...props}
@@ -107,7 +107,7 @@ function BookIcon(props) {
 }
 
 
-function CodepenIcon(props) {
+function CodepenIcon(props: any) {
   return (
     <svg
       {...props}
@@ -131,7 +131,7 @@ function CodepenIcon(props) {
 }
 
 
-function EclipseIcon(props) {
+function EclipseIcon(props: any) {
   return (
     <svg
       {...props}
@@ -154,7 +154,7 @@ function EclipseIcon(props) {
 
 
 
-function ForwardIcon(props) {
+function ForwardIcon(props: any) {
   return (
     <svg
       {...props}
@@ -175,7 +175,7 @@ function ForwardIcon(props) {
 }
 
 
-function GitGraphIcon(props) {
+function GitGraphIcon(props: any) {
   return (
     <svg
       {...props}
@@ -200,7 +200,7 @@ function GitGraphIcon(props) {
 }
 
 
-function GitlabIcon(props) {
+function GitlabIcon(props: any) {
   return (
     <svg
       {...props}
@@ -220,7 +220,7 @@ function GitlabIcon(props) {
 }
 
 
-function HashIcon(props) {
+function HashIcon(props: any) {
   return (
     <svg
       {...props}
@@ -246,7 +246,7 @@ function HashIcon(props) {
 
 
 
-function Redo2Icon(props) {
+function Redo2Icon(props: any) {
   return (
     <svg
       {...props}
@@ -270,7 +270,7 @@ function Redo2Icon(props) {
 
 
 
-function TypeIcon(props) {
+function TypeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -292,7 +292,7 @@ function TypeIcon(props) {
 }
 
 
-function WebcamIcon(props) {
+function WebcamIcon(props: any) {
   return (
     <svg
       {...props}
@@ -315,7 +315,7 @@ function WebcamIcon(props) {
 }
 
 
-function WindIcon(props) {
+function WindIcon(props: any) {
   return (
     <svg
       {...props}

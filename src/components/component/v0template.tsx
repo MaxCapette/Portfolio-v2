@@ -62,7 +62,7 @@ export function V0template() {
         <section id="experience" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-secondary to-primary">
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold flex ">Work Experience</h2>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-xl">
               Here&apos;s a timeline of my previous roles and experiences.
             </p>
           </div>
@@ -72,8 +72,8 @@ export function V0template() {
         <section id="contact" className="py-16 px-6 md:px-10 lg:px-16 bg-muted">
           <div className="max-w-4xl mx-auto space-y-4 flex flex-col items-center">
             <h2 className="text-3xl font-bold">Get in Touch</h2>
-            <p className="text-muted-foreground">
-              Feel free to reach out to me for any inquiries or opportunities.
+            <p className="text-muted-foreground text-xl">
+            Feel free to contact me with any questions or to discuss a potential project.
             </p>
            <ContactPage />
           </div>
