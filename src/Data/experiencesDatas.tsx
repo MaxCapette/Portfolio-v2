@@ -54,7 +54,7 @@ export const experiences: Experience[] = [
         date: '2024',
         title: 'Freelance',
         description: 'I am currently working as a freelancer.',
-        image: '/about/freelance.jpeg',
+        image: '/about2.jpeg',
         bool: false,
     }
 //     ,
