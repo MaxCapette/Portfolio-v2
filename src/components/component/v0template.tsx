@@ -49,7 +49,7 @@ export function V0template() {
                 width={400}
                 height={400}
                 alt="a cool picture of me (kind of)"
-                className="shadow-lg filter hover:grayscale "
+                className="shadow-lg filter grayscale hover:filter-none "
               />
             </div>
           </div>
