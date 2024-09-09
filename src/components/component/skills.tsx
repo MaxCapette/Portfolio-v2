@@ -56,10 +56,10 @@ export function Skills() {
             <GitlabIcon className="w-10 h-10" />
             <span className="text-sm font-medium">GitHub</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
-            <WebcamIcon className="w-10 h-10" />
+          {/* <div className="flex flex-col items-center gap-2">
+            <BookIcon className="w-10 h-10" />
             <span className="text-sm font-medium">ChatGPT</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

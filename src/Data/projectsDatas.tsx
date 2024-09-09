@@ -107,26 +107,7 @@ export const projects: Project[] = [
         githubLink2: '',
         comment: 'Shopifly is a mockup eshop. It is a project that I made to get more familiar with NextJs, made with React, NextJs, Typescript and Tailwindcss.',
     },
-    {
-        id: 5,
-        title: 'Titovideo',
-        description: 'wordpress elementor',
-        images: ['/projects/titovideo1.webp', '/projects/titovideo2.webp', '/projects/titovideo3.webp'],
-        link: 'https://www.titovideo.fr/',
-        githubLink1: '',
-        githubLink2: '',
-        comment: 'Wordpress website, made in internship, with elementor, made the responsive,some design and the SEO',
-    },
-    {
-        id: 11,
-        title: "O'rder",
-        description: 'React Symfony Typescript Tailwindcss',
-        images: ['/projects/order1.webp', '/projects/order2.webp', '/projects/order3.webp'],
-        link: '',
-        githubLink1: 'https://github.com/MaxCapette/Order-front',
-        githubLink2: 'https://github.com/MaxCapette/Order-back',
-        comment: "Apotheosis project at the end of the training O'Clock, React with vite, typescript and redux for the front, php with symfony for the back, carried out in a group of 5",
-    },
+    
     {
         id: 13,
         title: "EasyGPU",
@@ -137,16 +118,7 @@ export const projects: Project[] = [
         githubLink2: '',
         comment: "Mockup I made for a client, made with React, NextJs, Typescript and Tailwindcss.",
     }, 
-    {
-        id: 14,
-        title: "EasyGPU",
-        description: 'Shopify',
-        images: ['/projects/easygpushopify1.webp', '/projects/easygpushopify2.webp', '/projects/easygpushopify3.webp'],
-        link: 'https://www.easygpu.fr/',
-        githubLink1: '',
-        githubLink2: '',
-        comment: "Shop I made for a client, with Shopify.",
-    },
+    
     {
         id: 15,
         title: "Teranga Consulting",
@@ -278,6 +250,16 @@ export const projects: Project[] = [
         comment: "Website I made for a client, with NextJS and Versel.",
     },
     {
+        id: 14,
+        title: "EasyGPU",
+        description: 'Shopify',
+        images: ['/projects/easygpushopify1.webp', '/projects/easygpushopify2.webp', '/projects/easygpushopify3.webp'],
+        link: 'https://www.easygpu.fr/',
+        githubLink1: '',
+        githubLink2: '',
+        comment: "Shop I made for a client, with Shopify.",
+    },
+    {
         id: 28,
         title: "Mallard Plus",
         description: 'NextJs Versel Typescript Tailwindcss',
@@ -288,6 +270,17 @@ export const projects: Project[] = [
         comment: "Website I made for a client, with NextJS and Versel.",
     },
     {
+        id: 5,
+        title: 'Titovideo',
+        description: 'wordpress elementor',
+        images: ['/projects/titovideo1.webp', '/projects/titovideo2.webp', '/projects/titovideo3.webp'],
+        link: 'https://www.titovideo.fr/',
+        githubLink1: '',
+        githubLink2: '',
+        comment: 'Wordpress website, made in internship, with elementor, made the responsive,some design and the SEO',
+    },
+   
+    {
         id: 29,
         title: "NITO SERVICES",
         description: 'NextJs Versel Typescript Tailwindcss',
@@ -296,6 +289,17 @@ export const projects: Project[] = [
         githubLink1: 'https://github.com/MaxCapette/nito-services',
         githubLink2: '',
         comment: "Website I made for a client, with NextJS and Versel.",
+    },
+   
+    {
+        id: 11,
+        title: "O'rder",
+        description: 'React Symfony Typescript Tailwindcss',
+        images: ['/projects/order1.webp', '/projects/order2.webp', '/projects/order3.webp'],
+        link: '',
+        githubLink1: 'https://github.com/MaxCapette/Order-front',
+        githubLink2: 'https://github.com/MaxCapette/Order-back',
+        comment: "Apotheosis project at the end of the training O'Clock, React with vite, typescript and redux for the front, php with symfony for the back, carried out in a group of 5",
     },
     {
         id: 30,
@@ -306,6 +310,6 @@ export const projects: Project[] = [
         githubLink1: 'https://github.com/MaxCapette/l5m-services',
         githubLink2: '',
         comment: "Website I made for a client, with NextJS and Versel.",
-    },
+    }
 
 ];
