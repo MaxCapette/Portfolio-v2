@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-
 import About from "../about/About";
 import Projects from "../Projects";
 import ContactPage from "../contact/contact";
@@ -11,12 +10,12 @@ export function V0template() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <section id="about" className="py-16 px-6 md:px-10 lg:px-16 bg-accent ">
+        <section id="about" className="pt-3 pb-16 px-6 md:px-10 lg:px-16 bg-accent scroll-mt-36">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
-            
               <div className="typewriter w-min">
-              <h1 className="text-4xl font-bold">Hello 👋 I&apos;m Max,</h1></div>
+                <h1 className="text-4xl font-bold">Hello 👋 I&apos;m Max,</h1>
+              </div>
               <h2 className="text-2xl font-medium ">a Web Developer</h2>
               <p className=" introText text-xl text-justify">
                 I&apos;m a passionate front-end developer with a strong focus on
@@ -55,14 +54,19 @@ export function V0template() {
           </div>
         </section>
         <Checkerboard />
-        <section
-          id="projects"
-          className="py-16 px-6 md:px-10 lg:px-16 bg-input"
+        <section id="projects" className="py-16 px-6 md:px-10 lg:px-16 bg-input scroll-mt-8"
         >
           <Projects />
         </section>
         <Checkerboard />
-        <section id="experience" className="py-16 px-6 md:px-10 lg:px-16 bg-gradient-to-r from-input to-secondary">
+        <section id="skills" className="scroll-mt-8">
+          <Skills />
+        </section>
+
+        <Checkerboard />
+        <section id="experience"
+          className="py-16 px-6 md:px-10 lg:px-16 bg-input scroll-mt-8"
+        >
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold flex ">Work Experience</h2>
             <p className="text-muted-foreground text-xl">
@@ -71,16 +75,17 @@ export function V0template() {
           </div>
           <About />
         </section>
+        
+
         <Checkerboard />
-        <Skills />
-        <Checkerboard />
-        <section id="contact" className="py-16 px-6 md:px-10 lg:px-16 bg-muted">
+        <section id="contact" className="py-16 px-6 md:px-10 lg:px-16 bg-muted scroll-mt-8">
           <div className="max-w-4xl mx-auto space-y-4 flex flex-col items-center">
             <h2 className="text-3xl font-bold">Get in Touch</h2>
             <p className="text-muted-foreground text-xl">
-            Feel free to contact me with any questions or to discuss a potential project.
+              Feel free to contact me with any questions or to discuss a
+              potential project.
             </p>
-           <ContactPage />
+            <ContactPage />
           </div>
         </section>
         <Checkerboard />

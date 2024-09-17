@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Projects({ params }: { params: { id: string } }) {
+ /* finding a project object from an array of projects based on a specific condition. */
   const project = projects.find((p) => p.id === parseInt(params.id));
 
   if (!project) {

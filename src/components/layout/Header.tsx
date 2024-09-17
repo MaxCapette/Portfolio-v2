@@ -36,6 +36,13 @@ export default function Header() {
         Projects
       </Link>
       <Link
+        href="#skills"
+        className="hover:underline underline-offset-4"
+        prefetch={false}
+      >
+        Technos
+      </Link>
+      <Link
         href="#experience"
         className="hover:underline underline-offset-4"
         prefetch={false}
@@ -81,11 +88,20 @@ export default function Header() {
           <SheetClose asChild>
             <Link
               className="font-medium hover:text-gray-900 dark:hover:text-gray-50"
+              href="#skills"
+            >
+              Technos
+            </Link>
+          </SheetClose>
+          <SheetClose asChild>
+            <Link
+              className="font-medium hover:text-gray-900 dark:hover:text-gray-50"
               href="#experience"
             >
               Experience
             </Link>
           </SheetClose>
+         
           <SheetClose asChild>
             <Link
               className="font-medium hover:text-gray-900 dark:hover:text-gray-50"

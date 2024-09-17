@@ -80,3 +80,7 @@
   color: hsl(var(--muted-foreground));
   animation: fadeIn 2s ease-in-out;
 }
+
+html {
+  scroll-behavior: smooth;
+}
