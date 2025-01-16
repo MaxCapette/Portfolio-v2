@@ -57,13 +57,13 @@ export const experiences: Experience[] = [
         image: '/testchar2.jpeg',
         bool: false,
     }
-//     ,
-//     {
-//         id: 8,
-//         date: '2024',
-//         title: 'To be continued',
-//         description: 'description',
-//         image: '/about/To be continued.png',
-//         bool: true,
-//     }
+    ,
+    {
+        id: 8,
+        date: '2025',
+        title: 'Freelance at AudioWizard',
+        description: 'I am currently working as a freelancer at AudioWizard',
+        image: '/about/audiowizard_logo.jpeg',
+        bool: false,
+    }
  ];
