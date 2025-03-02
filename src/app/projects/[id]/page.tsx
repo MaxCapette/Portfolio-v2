@@ -3,6 +3,45 @@ import { projects } from "@/Data/projectsDatas";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+
+type Props = {
+  params: { id: string }
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const project = projects.find((p) => p.id === parseInt(params.id));
+  
+  if (!project) {
+    return {
+      title: "Projet non trouvé",
+      description: "Le projet que vous recherchez n'existe pas"
+    };
+  }
+
+  return {
+    title: `${project.title} | Portfolio de Max Capette`,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} | Portfolio de Max Capette`,
+      description: project.description,
+      images: [
+        {
+          url: project.images[0],
+          width: 800,
+          height: 600,
+          alt: `Capture d'écran du projet ${project.title}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Portfolio de Max Capette`,
+      description: project.description,
+      images: [project.images[0]],
+    },
+  };
+}
 
 export default function Projects({ params }: { params: { id: string } }) {
  /* finding a project object from an array of projects based on a specific condition. */
@@ -27,13 +66,13 @@ export default function Projects({ params }: { params: { id: string } }) {
               <div className="flex space-x-2 justify-center">
                 <img
                   src={project.images[1]}
-                  alt={project.title}
+                  alt={`Capture d'écran principale du projet ${project.title} - ${project.description}`}
                   className="rounded-lg shadow-lg w-1/2 h-auto"
                 />
                 {project.images[2] && (
                   <img
                     src={project.images[2]}
-                    alt={project.title}
+                    alt={`Capture d'écran supplémentaire du projet ${project.title} - interface utilisateur`}
                     className="rounded-lg shadow-lg w-1/2 h-auto"
                   />
                 )}
@@ -43,13 +82,13 @@ export default function Projects({ params }: { params: { id: string } }) {
             <div className="flex space-x-2 justify-center">
               <img
                 src={project.images[1]}
-                alt={project.title}
+                alt={`Capture d'écran principale du projet ${project.title} - ${project.description}`}
                 className="rounded-lg shadow-lg w-1/2 h-auto"
               />
               {project.images[2] && (
                 <img
                   src={project.images[2]}
-                  alt={project.title}
+                  alt={`Capture d'écran supplémentaire du projet ${project.title} - interface utilisateur`}
                   className="rounded-lg shadow-lg w-1/2 h-auto"
                 />
               )}

@@ -18,10 +18,7 @@ export function V0template() {
               </div>
               <h2 className="text-2xl font-medium ">a Web Developer</h2>
               <p className=" introText text-xl text-justify">
-                I&apos;m a passionate front-end developer with a strong focus on
-                building beautiful and responsive user interfaces. I have
-                experience working with modern web technologies and frameworks,
-                and I&apos;m always eager to learn and grow.
+                I&apos;m a passionate fullstack developer dedicated to building complete and high-performance web applications. My expertise spans from crafting elegant user interfaces to designing robust back-end architectures. I work with modern web technologies and I continuously enjoy learning and taking on new technical challenges.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -47,7 +44,7 @@ export function V0template() {
                 src="/about2.jpeg"
                 width={400}
                 height={400}
-                alt="a cool picture of me (kind of)"
+                alt="Photo de profil de Maxime Capette, développeur web fullstack"
                 className="shadow-lg filter grayscale hover:filter-none "
               />
             </div>

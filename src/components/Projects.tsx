@@ -31,7 +31,13 @@ const currentProjects = reversedProjects.slice(indexOfFirstProject, indexOfLastP
           {currentProjects.map(project => (
             <Card key={project.id} className="transform transition-transform hover:scale-110 flex flex-col items-center">
                 <Link className="project" href={`projects/${project.id}`}>
-              <img src={project.images[0]} width={400} height={300} alt="Project 1" className=" inset-0 h-60 object-contain hover:object-fill rounded-t-lg" />
+              <img 
+                src={project.images[0]} 
+                width={400} 
+                height={300} 
+                alt={`Capture d'écran du projet ${project.title} - ${project.description}`} 
+                className=" inset-0 h-60 object-contain hover:object-fill rounded-t-lg" 
+              />
               <CardContent className="p-4">
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
