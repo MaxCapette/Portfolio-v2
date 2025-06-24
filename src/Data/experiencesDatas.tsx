@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
         id: 7,
         date: '2024',
         title: 'Freelance',
-        description: 'I am currently working as a freelancer.',
+        description: 'I work as a freelancer on various projects.',
         image: '/testchar2.jpeg',
         bool: false,
     }
@@ -66,4 +66,4 @@ export const experiences: Experience[] = [
         image: '/about/audiowizard_logo.jpeg',
         bool: false,
     }
- ];
+];
