@@ -24,7 +24,7 @@ export function V0template() {
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="/pdf/CV_2024-09-17_Maxime_Capette.pdf"
+                  href="/pdf/CV_2025-06-18_Maxime_Capette.pdf"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-input"
                   prefetch={false}
                 >
@@ -67,7 +67,7 @@ export function V0template() {
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold flex ">Work Experience</h2>
             <p className="text-muted-foreground text-xl">
-              Here&apos;s a timeline of my previous roles and experiences.
+              Here&apos;s a timeline of my experiences.
             </p>
           </div>
           <About />

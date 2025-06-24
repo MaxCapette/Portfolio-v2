@@ -60,9 +60,9 @@ export const experiences: Experience[] = [
     ,
     {
         id: 8,
-        date: '2025',
-        title: 'Freelance at AudioWizard',
-        description: 'I am currently working as a freelancer at AudioWizard',
+        date: 'January 2025 to Present',
+        title: 'Fullstack Developer at AudioWizard',
+        description: 'I am currently working as a fullstack developer at AudioWizard',
         image: '/about/audiowizard_logo.jpeg',
         bool: false,
     }
